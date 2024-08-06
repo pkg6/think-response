@@ -1,0 +1,34 @@
+{
+  "name": "tp5er/think-response",
+  "description": "🤖 Provide a standardized and unified response data structure for Thinkphp projects. - 为 Thinkphp项目提供一个规范统一的响应数据结构。",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhiqiang",
+      "email": "zhiqiang2033@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2.5|^8.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tp5er\\Think\\Response\\": "src/"
+    }
+  },
+  "require-dev": {
+    "topthink/framework": "^6.0 || ^8.0"
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "Tp5er\\Think\\Response\\Service"
+      ],
+      "config": {
+        "response": "config/response.php"
+      }
+    }
+  }
+}
