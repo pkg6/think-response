@@ -15,9 +15,10 @@ return [
 
     'error_code' => false,
 
+    "enum"      => "",
 
     //You can set some attributes (eg:code/message/header/options) for the exception, and it will override the default attributes of the exception
-    'exception'  => [
+    'exception' => [
         \think\exception\ValidateException::class      => [
             'code' => 422,
         ],
@@ -28,7 +29,7 @@ return [
             'message' => '',
         ],
     ],
-    'format'     => [
+    'format'    => [
         \Tp5er\Think\Response\Format::class,
         []
     ]
